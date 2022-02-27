@@ -1,5 +1,5 @@
 library(EcoVirtual)
-server <- function(input, output) {
+shinyServer(function(input, output, session) {
   
   
   
@@ -8,4 +8,4 @@ server <- function(input, output) {
     popExp(input$NumIn, input$Lam, input$years)
   })
   
-}
+})
