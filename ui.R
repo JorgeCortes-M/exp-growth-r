@@ -27,7 +27,7 @@ ui <- fluidPage(
     numericInput(inputId = "years", 
                  label = "Anos: ", 
                  value = 100),
-    
+    actionButton("submitbutton", "Submit", class = "btn btn-primary"),
     
   ),
   
