@@ -1,11 +1,11 @@
 library(EcoVirtual)
-shinyServer(function(input, output, session) {
+shinyServer(function(input, output) {
   
   
   
   output$growplot <- renderPlot({
-    
-    popExp(input$NumIn, input$Lam, input$years)
+    if (input$submitbutton>0){
+    popExp(input$NumIn, input$Lam, input$years)} 
   })
   
 })
